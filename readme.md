@@ -3,7 +3,7 @@ ospf-tools is a command-line tool for comparing OSPF changes over time. It curre
 
 There are currently two functions: `--init` and `--compare`
 
-The `init` function takes an OSPF database (as serialized JSON) and outputs a sqlite database (snapshot) to the directory specified at the top of `ospf-tools.py` (default is the current directory). The snapshot file is named after the time it was taken e.g. `2023-05-01_23-42.db`.
+The `init` function takes an OSPF database (as serialized JSON) and outputs a sqlite database (snapshot) to the directory specified at the top of `ospf-tools.py` (default is the current directory). The snapshot file is named after the time it was taken e.g. `2023-05-01_23-42.db`
 
 The `compare` function compares two separate snapshots of the OSPF database and will list the changes as output to console, as well as add any route changes as rows to the database named `route_changes.db`
 
@@ -17,6 +17,8 @@ Metrics collected and output by the compare function, available for export to ot
   + Added nodes
   + Removed nodes 
   + Updated nodes
+    + added routes
+    + removed routes
   + Default route changes
 
 
