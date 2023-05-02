@@ -31,7 +31,9 @@ Has been tested on Linux. `std-out` output of the compare function is color-code
 ## Init:
 
 `curl http://api.dns.record/api/endpoint | python3 ospf-tools.py --init`
+
 (URI is in Slack)
+
 you should see an echo for each route processed and then a summary:
 ```
 Initialization complete
