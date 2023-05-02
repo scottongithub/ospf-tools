@@ -30,7 +30,7 @@ Has been tested on Linux. `std-out` output of the compare function is color-code
 
 ## Init:
 
-`curl http://api.dns.record/api/endpoint | ospf-tools --init`
+`curl http://api.dns.record/api/endpoint | python3 ospf-tools --init`
 (URI is in Slack)
 you should see an echo for each route processed and then a summary:
 ```
@@ -44,7 +44,7 @@ Total routes in OSPF table: xxxxxx
 ````
 
 ## Compare:
-`ospf-tools --compare /path/to/earlier-db /path/to/later-db`
+`python3 ospf-tools --compare /path/to/earlier-db /path/to/later-db`
 
 you should see output summarizing changes between snapshots:
 
